@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".STSView"
+    >
+    <item
+        android:id="@+id/channel_list"
+        android:orderInCategory="100"
+        android:title="@string/Channel_List"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/Featured_Channels"
+        android:orderInCategory="101"
+        android:title="@string/Featured_Channels"
+        app:showAsAction="never"
+        />
+
+</menu>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEAB9B">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/holo_orange_light"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:ignore="MissingConstraints"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:backgroundTint="#C77961"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Список каналов:"
+                android:textSize="32sp" />
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="62dp"
+                    android:layout_height="79dp"
+                    android:padding="8dp"
+                    app:srcCompat="@drawable/__5_svg" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="PervyView"
+                    android:padding="8dp"
+                    android:text="Первый канал"
+                    android:textSize="28sp" />
+
+                <Button
+                    android:id="@+id/button_favorite_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/holo_orange_light"
+                    android:onClick="addChannelToFavorites"
+                    android:text="Добавить в избранные"
+                    android:textColor="#CE0B0B" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="62dp"
+                    android:layout_height="79dp"
+                    android:padding="8dp"
+                    app:srcCompat="@drawable/logos_d_1" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="STSView"
+                    android:padding="8dp"
+                    android:text="Домашний"
+                    android:textSize="32sp" />
+
+                <Button
+                    android:id="@+id/button_favorite_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="addChannelToFavorites"
+                    android:text="Добавить в избранные"
+                    android:backgroundTint="@android:color/holo_orange_light"
+                    android:textColor="#CE0B0B"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="62dp"
+                    android:layout_height="79dp"
+                    android:padding="8dp"
+                    app:srcCompat="@drawable/ntv_logo_2003_svg" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="NTVView"
+                    android:padding="8dp"
+                    android:text="НТВ"
+                    android:textSize="32sp" />
+
+                <Button
+                    android:id="@+id/button_favorite_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="addChannelToFavorites"
+                    android:text="Добавить в избранные"
+                    android:textColor="#CE0B0B"
+                    android:backgroundTint="@android:color/holo_orange_light"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="62dp"
+                    android:layout_height="79dp"
+                    android:padding="8dp"
+                    app:srcCompat="@drawable/tnt" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="TNTView"
+                    android:padding="8dp"
+                    android:text="ТНТ"
+                    android:textSize="32sp" />
+
+                <Button
+                    android:id="@+id/button_favorite_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="addChannelToFavorites"
+                    android:text="Добавить в избранные"
+                    android:textColor="#CE0B0B"
+                    android:backgroundTint="@android:color/holo_orange_light"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
